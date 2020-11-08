@@ -1,0 +1,147 @@
+body {
+    font-family: 'Karla', sans-serif;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 30px;
+    color: hsl(204, 43%, 93%);
+    background-color: rgb(230, 239, 246);
+}
+
+span {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    padding-right: 10px;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+h2 {
+    color: hsl(204, 43%, 93%);
+    font-size: 20px;
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+    font-size: 18px;
+}
+
+h4 {
+    color: hsl(217, 16%, 84%);
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color:hsl(204, 43%, 93%);
+}
+
+.sub-button {
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 100px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.sub-button:hover {
+    background-color: rgb(170, 200, 32);
+    color: #fff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    line-height: 25px;
+}
+
+.subscription-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid {
+    padding: 20px 25px;
+}
+
+.sub-intro {
+    background-color: #fff;
+    color: hsl(218, 22%, 67%);
+}
+
+.sub-price {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.sub-price p {
+    color:#fff;
+    margin-bottom: 40px;
+    line-height: 0;
+}
+
+.sub-whyus {
+    background-color: rgb(74, 190, 189);
+}
+
+.sub-whyus ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 14px;
+    /* border-bottom-left-radius: ; */
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .grid {
+        padding: 30px 45px;
+    }
+
+    .subscription-panel {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sub-intro {
+        grid-column: 1/3;
+    }
+
+    .sub-intro p {
+        font-size: 18px;
+    }
+
+    .sub-price {
+        grid-column: 1/2;
+    }
+
+    .sub-price p {
+        font-size: 18px;
+    }
+
+    .sub-whyus {
+        grid-column: 2/3;
+    }
+
+    .sub-whyus ul {
+        font-size: 16px;
+    }
+}
